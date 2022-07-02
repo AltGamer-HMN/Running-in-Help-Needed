@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="752429758788600">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="436270902076913" type="Sprite2">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="222148464922700" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
