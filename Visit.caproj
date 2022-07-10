@@ -10,11 +10,14 @@
     <unique-id>3r6neksu636sw</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -40,12 +43,12 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="826128601460043">
+        <object-type name="bannedContent" sid="826128601460043">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="956248674637575">
@@ -60,6 +63,9 @@
         </object-type>
         <object-type name="Sprite2" sid="982554374995620">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="p" sid="566886353793054" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="ScrollTo" sid="821932247229131">
                     <behavior id="scrollto" />
@@ -67,10 +73,18 @@
                 <behavior-type name="8Direction" sid="916728710810700">
                     <behavior id="EightDir" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="201432850901662">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131195625163731" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131195625163731" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
+                </animation>
+                <animation framecount="2" loop="0" name="pee" pingpong="0" repeatcount="1" repeatto="0" sid="794039921369960" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -85,18 +99,139 @@
         <object-type name="Browser" sid="736566619617669">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="Sprite" sid="967537034925263">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="692142539371911">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522554575823428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="696601100939564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="468473798908725">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649505292414820" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="247075395498732">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="836140371864878">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="896676902482135" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="975124700630437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="893012061182865" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="265825655855294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547048612028562" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="491155421702872">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498750609622534" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="371021617548547">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="420630930659336" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="987669042682844">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Audio" sid="891071346510611">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite10" sid="856839736760160">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797039238945152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="962983313777164">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="562679839877278">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586778321686919" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Browser" uid="10" />
+        <global-instance type="Keyboard" uid="23" />
+        <global-instance type="Audio" uid="24">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Sound_06441.ogg" />
+        <file name="WATRDrip_Man pees (ID 0151)_BSB.ogg" />
+        <file name="WATRDrip_Man urinating 2 (ID 1717)_BSB.ogg" />
+        <file name="WATRDrip_Man urinating 3 (ID 1718)_BSB.ogg" />
+        <file name="Wet-Fart-Meme-Sound-Effect-_HD_.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
