@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <event-block sid="119145371972615">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="673917826354338" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="989382563198005" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="646028144810789">
+            <conditions>
+                <condition id="3" name="On key released" sid="564588854060648" type="Keyboard">
+                    <param id="0" name="Key">79</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="639114093350527" type="Sprite13">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="25" name="Play at object" sid="546021137516960" type="Audio">
+                    <param id="0" name="Audio file">00597</param>
+                    <param id="1" name="Loop">1</param>
+                    <param id="2" name="Volume">0</param>
+                    <param id="3" name="Object">Sprite13</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="264107276034245">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="946820294387336" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="268260854250480" type="Sprite13">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="121037161389621" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="957145894780447">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="353212762566019" type="Sprite2">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="797801128370382" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

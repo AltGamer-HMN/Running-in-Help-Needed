@@ -5,26 +5,20 @@
     <events>
         <include>Event sheet 2</include>
         <variable constant="0" name="enter" sid="662399819048286" static="0" type="number">0</variable>
-        <event-block sid="752429758788600">
+        <event-block sid="982976172482024">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="436270902076913" type="Sprite2">
-                    <param id="0" name="Object">Sprite3</param>
+                <condition id="-2" name="On start of layout" sid="697715003500497" type="System" />
+                <condition id="-14" name="Compare variable" sid="399533578737143" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="222148464922700" type="System">
-                    <param id="0" name="Layout">Layout 2</param>
+                <action id="-3" name="Set position" sid="175036715897287" type="Sprite2">
+                    <param id="0" name="X">513</param>
+                    <param id="1" name="Y">391</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="703686894915917">
-            <conditions>
-                <condition id="-31" inverted="1" name="Object UID exists" sid="480345371648978" type="System">
-                    <param id="0" name="UID">7</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="458788390223266" type="Browser" />
             </actions>
         </event-block>
         <event-block sid="514957117214115">
@@ -43,13 +37,57 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="982976172482024">
+        <event-block sid="298783226545906">
             <conditions>
-                <condition id="0" name="On key pressed" sid="399533578737143" type="Keyboard">
-                    <param id="0" name="Key">121</param>
+                <condition id="-2" name="On start of layout" sid="126861628211832" type="System" />
+                <condition id="-14" name="Compare variable" sid="527901118183909" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-3" name="Set position" sid="390368552061656" type="Sprite2">
+                    <param id="0" name="X">583</param>
+                    <param id="1" name="Y">155</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="752429758788600">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="436270902076913" type="Sprite2">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="222148464922700" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="569195370246137">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="898169978891985" type="Sprite2">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="420795368035069" type="System">
+                    <param id="0" name="Layout">Layout 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="392122472669415">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="140238726495267" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="379915512562272" type="System">
+                    <param id="0" name="Layout">Layout 4</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

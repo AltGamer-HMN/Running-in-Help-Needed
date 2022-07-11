@@ -28,6 +28,10 @@
                 <action behavior="Solid" id="0" name="Set enabled" sid="772238436664636" type="Sprite2">
                     <param id="0" name="State">0</param>
                 </action>
+                <action id="-3" name="Set position" sid="768105222304697" type="Sprite2">
+                    <param id="0" name="X">416</param>
+                    <param id="1" name="Y">394</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="759253310336141">
