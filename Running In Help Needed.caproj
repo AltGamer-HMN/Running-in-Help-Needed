@@ -13,13 +13,13 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -32,15 +32,16 @@
         <height>480</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
-    <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <preview-effects>0</preview-effects>
+    <first-layout>Flat</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -115,11 +116,6 @@
         </object-type>
         <object-type name="Sprite4" sid="696601100939564">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="468473798908725">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649505292414820" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -220,17 +216,6 @@
         </object-type>
         <object-type name="Sprite12" sid="236170433298267">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="848424164368644">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="Jumpthru" sid="267845592013824">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-                <behavior-type name="Platform2" sid="239104021645922">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202734156207924" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -255,6 +240,11 @@
         </object-type>
         <object-type name="Sprite14" sid="644278609902816">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="922807787731128">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="893524653662152" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -263,6 +253,11 @@
         </object-type>
         <object-type name="Sprite15" sid="906431678364595">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="276377872038556">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498659124535727" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -299,6 +294,135 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite17" sid="260247132343865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309075429368601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="170426484429693">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="NWjs" sid="425177039341721">
+            <plugin id="NodeWebkit" />
+        </object-type>
+        <object-type name="Sprite18" sid="855773766841667">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517236308074897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="214016649858976">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="699102665872354">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383147695396406" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="760342930082363">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="390609588497231">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="798431567444044" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="254875949797398">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="731421729594424">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="823778234900831" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="939492948278677">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="185038675636718">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635530931160182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="348291854375718">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="120044204751984">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464797659560170" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="685246915685544">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456832314122557" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="319312557011623">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481549438024016" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="795713738024016">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="724821255302441">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372500052214215" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="978846326431059">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="514260399653793">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110136761717157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -308,6 +432,10 @@
         <layout>Something.xml</layout>
         <layout>RealLife2.xml</layout>
         <layout>RealLife.xml</layout>
+        <layout>BedRoom.xml</layout>
+        <layout>UrpoBaR.xml</layout>
+        <layout>Visit.xml</layout>
+        <layout>Kitchen.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>FlatScript.xml</event-sheet>
@@ -316,6 +444,10 @@
         <event-sheet>Something.xml</event-sheet>
         <event-sheet>TubScript.xml</event-sheet>
         <event-sheet>RealLifeScript.xml</event-sheet>
+        <event-sheet>Bedroom.xml</event-sheet>
+        <event-sheet>UrpoBaR.xml</event-sheet>
+        <event-sheet>TheBiggestRoom-sScript.xml</event-sheet>
+        <event-sheet>KitchenScript.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Browser" uid="10" />
@@ -334,6 +466,8 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="43" />
+        <global-instance type="NWjs" uid="48" />
     </global-instances>
     <sounds-folder>
         <file name="Sound_06441.ogg" />
@@ -343,6 +477,9 @@
         <file name="Wet-Fart-Meme-Sound-Effect-_HD_.ogg" />
         <file name="00597.ogg" />
         <file name="exit.ogg" />
+        <file name="dramatic_fart_sound_effect[ConConverter.com].m4a" />
+        <file name="PCoff.ogg" />
+        <file name="PCon.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

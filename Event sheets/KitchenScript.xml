@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>KitchenScript</name>
+    <events>
+        <variable constant="0" name="reesie" sid="394727526830857" static="0" type="number">0</variable>
+        <event-block sid="301502511398438">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="314619253748902" type="Sprite2">
+                    <param id="0" name="Object">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="558100145366596" type="System">
+                    <param id="0" name="Variable">reesie</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -10,18 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Flat</layout>
-        <layout order="2">Bathroom</layout>
-        <layout order="4">Something</layout>
-        <layout order="6">RealLife2</layout>
-        <layout active="1" order="9">RealLife</layout>
-        <layout order="11">WC</layout>
-        <event-sheet order="1">FlatScript</event-sheet>
-        <event-sheet order="3">BathScript</event-sheet>
-        <event-sheet order="5">Something</event-sheet>
-        <event-sheet order="7">WCScript</event-sheet>
-        <event-sheet order="8">TubScript</event-sheet>
-        <event-sheet order="10">RealLifeScript</event-sheet>
+        <layout active="1" order="0">Visit</layout>
+        <layout order="2">Kitchen</layout>
+        <event-sheet order="1">TheBiggestRoom-sScript</event-sheet>
+        <event-sheet order="3">KitchenScript</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -57,5 +49,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite16/" />
         <folder expanded="1" path="animation-folder/IMG_20220712_/" />
         <folder expanded="1" path="animation-folder/photo_20220712_/" />
+        <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/Sprite20/" />
+        <folder expanded="1" path="animation-folder/Sprite21/" />
+        <folder expanded="1" path="animation-folder/Sprite22/" />
+        <folder expanded="1" path="animation-folder/Sprite23/" />
+        <folder expanded="1" path="animation-folder/Sprite24/" />
+        <folder expanded="1" path="animation-folder/Sprite25/" />
+        <folder expanded="1" path="animation-folder/Sprite26/" />
+        <folder expanded="1" path="animation-folder/Sprite27/" />
     </folders-expanded>
 </c2uistate>

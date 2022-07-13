@@ -4,6 +4,16 @@
     <name>FlatScript</name>
     <events>
         <variable constant="0" name="enter" sid="662399819048286" static="0" type="number">0</variable>
+        <event-block sid="152752295170625">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="384937194111432" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="485106234573124" type="Browser">
+                    <param id="0" name="Mode">3</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="982976172482024">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="697715003500497" type="System" />
@@ -31,8 +41,8 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="594443605401105" type="Sprite2">
-                    <param id="0" name="X">238</param>
-                    <param id="1" name="Y">148</param>
+                    <param id="0" name="X">363</param>
+                    <param id="1" name="Y">153</param>
                 </action>
             </actions>
         </event-block>
@@ -49,6 +59,22 @@
                 <action id="-3" name="Set position" sid="390368552061656" type="Sprite2">
                     <param id="0" name="X">583</param>
                     <param id="1" name="Y">155</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="818643701685009">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="210952955465492" type="System" />
+                <condition id="-14" name="Compare variable" sid="915103028090956" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="146102847052378" type="Sprite2">
+                    <param id="0" name="X">176</param>
+                    <param id="1" name="Y">153</param>
                 </action>
             </actions>
         </event-block>
@@ -83,8 +109,84 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="379915512562272" type="System">
-                    <param id="0" name="Layout">Something</param>
+                <action id="1" name="Close" sid="379915512562272" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="876491688313048">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="689547012108122" type="Keyboard">
+                    <param id="0" name="Key">121</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="26" name="Show dev tools" sid="580962291262314" type="NWjs" />
+            </actions>
+        </event-block>
+        <event-block sid="570379735842999">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="149028530930167" type="Sprite2">
+                    <param id="0" name="Object">Sprite7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="157106947635131" type="System">
+                    <param id="0" name="Layout">BedRoom</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="636937947445404">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="296788330152066" type="Sprite2">
+                    <param id="0" name="Object">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="859694410935643" type="System">
+                    <param id="0" name="Layout">UrpoBaR</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="774106543120658">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="483510306081101" type="System" />
+                <condition id="-14" name="Compare variable" sid="107406012404109" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="530922144185534" type="Sprite2">
+                    <param id="0" name="X">769</param>
+                    <param id="1" name="Y">138</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="238031974876539">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="238053780305294" type="Sprite2">
+                    <param id="0" name="Object">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="916903621285192" type="System">
+                    <param id="0" name="Layout">Visit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="702541269002552">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="969378542524568" type="System" />
+                <condition id="-14" name="Compare variable" sid="448627600112626" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="468096782363445" type="Sprite2">
+                    <param id="0" name="X">79</param>
+                    <param id="1" name="Y">329</param>
                 </action>
             </actions>
         </event-block>

@@ -18,8 +18,9 @@
         </event-block>
         <event-block sid="773095993784494">
             <conditions>
-                <condition id="0" name="On ended" sid="109464200944142" type="Audio">
-                    <param id="0" name="Tag">&quot;fRT&quot;</param>
+                <condition id="-7" name="Compare time" sid="109464200944142" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">8.5</param>
                 </condition>
             </conditions>
             <actions>

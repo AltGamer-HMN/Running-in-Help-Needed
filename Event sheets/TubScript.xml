@@ -36,5 +36,25 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="886154530171456">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="925656377912406" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="914652637356097" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="784262056435315">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="770277723905024" type="Keyboard">
+                    <param id="0" name="Key">121</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="26" name="Show dev tools" sid="677989726578751" type="NWjs" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

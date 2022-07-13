@@ -34,18 +34,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="759253310336141">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="812442191166068" type="Sprite2">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Alert" sid="161656775138054" type="Browser">
-                    <param id="0" name="Message">&quot;You can: flush the toilet by pressing E; pee by pressing P; or poo by pressing O.&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="346834500643740">
             <conditions>
                 <condition id="0" name="On key pressed" sid="221761771706942" type="Keyboard">
@@ -294,6 +282,26 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="412182414712429">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="315435038864272" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="722439310515751" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="265956044904148">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="352353826913041" type="Keyboard">
+                    <param id="0" name="Key">121</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="26" name="Show dev tools" sid="904684081044906" type="NWjs" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>UrpoBaR</name>
+    <events>
+        <event-block sid="885516515216394">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="988645937165370" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="216377477978815" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="751751637699371">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="983314548466619" type="Sprite2">
+                    <param id="0" name="Object">Sprite25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="799323485863351" type="System">
+                    <param id="0" name="Layout">Flat</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
