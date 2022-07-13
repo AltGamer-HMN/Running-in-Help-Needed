@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TubScript</name>
+    <events>
+        <event-block sid="883437001456199">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="801419753891969" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="221467454080679" type="Text2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="902237804100285">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="362834852461982" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">5.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="685064061390780" type="Text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="345884680033407">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="505893198001773" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="597157557018235" type="System">
+                    <param id="0" name="Layout">RealLife</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

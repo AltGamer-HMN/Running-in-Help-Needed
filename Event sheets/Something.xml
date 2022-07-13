@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Something</name>
+    <events>
+        <event-block sid="420263644388063">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="766834124151330" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="654288241049870" type="Audio">
+                    <param id="0" name="Audio file">exit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;fRT&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="773095993784494">
+            <conditions>
+                <condition id="0" name="On ended" sid="109464200944142" type="Audio">
+                    <param id="0" name="Tag">&quot;fRT&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="854065218479431" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

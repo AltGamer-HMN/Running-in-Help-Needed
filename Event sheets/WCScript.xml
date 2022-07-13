@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>WCScript</name>
+    <events>
+        <include>FlatScript</include>
+        <event-block sid="561609069079228">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="446338038170220" type="Sprite2">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="598484177644166" type="System">
+                    <param id="0" name="Layout">Flat</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="996819937212668">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="959245949256893" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="606867077150971" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="772238436664636" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="768105222304697" type="Sprite2">
+                    <param id="0" name="X">416</param>
+                    <param id="1" name="Y">394</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759253310336141">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="812442191166068" type="Sprite2">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Alert" sid="161656775138054" type="Browser">
+                    <param id="0" name="Message">&quot;You can: flush the toilet by pressing E; pee by pressing P; or poo by pressing O.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346834500643740">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="221761771706942" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="25" name="Play at object" sid="144066310569665" type="Audio">
+                    <param id="0" name="Audio file">Sound_06441</param>
+                    <param id="1" name="Loop">0</param>
+                    <param id="2" name="Volume">0</param>
+                    <param id="3" name="Object">Sprite5</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="204951885997045">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="721296480438605" type="System" />
+                <condition id="-41" name="Is between angles" sid="876160008759495" type="System">
+                    <param id="0" name="Angle">0.1</param>
+                    <param id="1" name="First angle">0</param>
+                    <param id="2" name="Second angle">45</param>
+                </condition>
+                <condition id="4" name="Is any playing" sid="281234961074930" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set volume" sid="426279372679089" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                    <param id="1" name="dB">-10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="408619434609303">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="993006430294332" type="Keyboard">
+                    <param id="0" name="Key">80</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="369875513337644" type="Sprite2">
+                    <param id="0" name="Instance variable">p</param>
+                    <param id="1" name="Value">round(random(0, 2))</param>
+                </action>
+                <action id="4" name="Set animation" sid="304848837939128" type="Sprite2">
+                    <param id="0" name="Animation">&quot;pee&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="12" name="Set repeat-to frame" sid="503483946204526" type="Sprite2">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="3" name="Start" sid="748859183036278" type="Sprite2">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="326551848189665" type="Sprite2">
+                    <param id="0" name="X">420</param>
+                    <param id="1" name="Y">383</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="825413985553234">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="741436610302836" type="Sprite2">
+                            <param id="0" name="Instance variable">p</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="25" name="Play at object" sid="967952796809068" type="Audio">
+                            <param id="0" name="Audio file">WATRDrip_Man pees (ID 0151)_BSB</param>
+                            <param id="1" name="Loop">0</param>
+                            <param id="2" name="Volume">0</param>
+                            <param id="3" name="Object">Sprite5</param>
+                            <param id="4" name="Inner angle">360</param>
+                            <param id="5" name="Outer angle">360</param>
+                            <param id="6" name="Outer gain">0</param>
+                            <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="558017138700817">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="502350800440917" type="Sprite2">
+                            <param id="0" name="Instance variable">p</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="25" name="Play at object" sid="220843381894550" type="Audio">
+                            <param id="0" name="Audio file">WATRDrip_Man urinating 2 (ID 1717)_BSB</param>
+                            <param id="1" name="Loop">0</param>
+                            <param id="2" name="Volume">0</param>
+                            <param id="3" name="Object">Sprite5</param>
+                            <param id="4" name="Inner angle">360</param>
+                            <param id="5" name="Outer angle">360</param>
+                            <param id="6" name="Outer gain">0</param>
+                            <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="152294346887366">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="569295786705607" type="Sprite2">
+                            <param id="0" name="Instance variable">p</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="25" name="Play at object" sid="617740499987233" type="Audio">
+                            <param id="0" name="Audio file">WATRDrip_Man urinating 3 (ID 1718)_BSB</param>
+                            <param id="1" name="Loop">0</param>
+                            <param id="2" name="Volume">0</param>
+                            <param id="3" name="Object">Sprite5</param>
+                            <param id="4" name="Inner angle">360</param>
+                            <param id="5" name="Outer angle">360</param>
+                            <param id="6" name="Outer gain">0</param>
+                            <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="663474742381680">
+                    <conditions>
+                        <condition id="4" name="Is any playing" sid="275455497890278" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="878767765676595" type="Sprite2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="573774925258933" type="Sprite2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="6" name="Set speed" sid="824976208348365" type="Sprite2">
+                            <param id="0" name="Speed">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="845826820885917">
+            <conditions>
+                <condition id="0" name="On ended" sid="637357114266769" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="489363198528648" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="396286253803613" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="194389605630052" type="Sprite2">
+                    <param id="0" name="Magnitude">20</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+                <action id="2" name="Stop" sid="911412990943074" type="Sprite2" />
+                <action id="4" name="Set animation" sid="511960757675472" type="Sprite2">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="269537339260202">
+            <conditions>
+                <condition id="5" name="On any finished" sid="601488756344438" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="414651818430383" type="Sprite2">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447645784624518">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="198672147493852" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="677869345910183" type="Sprite2">
+                    <param id="0" name="Degrees">180</param>
+                </action>
+                <action id="-3" name="Set position" sid="248744768533594" type="Sprite2">
+                    <param id="0" name="X">419</param>
+                    <param id="1" name="Y">257</param>
+                </action>
+                <action id="-16" name="Wait" sid="746933725557278" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-3" name="Set position" sid="729633234345307" type="Sprite2">
+                    <param id="0" name="X">421</param>
+                    <param id="1" name="Y">382</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="381898283043647" type="Sprite2">
+                    <param id="0" name="Degrees">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="182730140965516">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="634829636758642" type="Keyboard">
+                    <param id="0" name="Key">79</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="352934324587019" type="Sprite2">
+                    <param id="0" name="Degrees">180</param>
+                </action>
+                <action id="-3" name="Set position" sid="576345292386959" type="Sprite2">
+                    <param id="0" name="X">418</param>
+                    <param id="1" name="Y">269</param>
+                </action>
+                <action id="0" name="Play" sid="994283419088780" type="Audio">
+                    <param id="0" name="Audio file">Wet-Fart-Meme-Sound-Effect-_HD_</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="855844520928240" type="Sprite2">
+                    <param id="0" name="X">421</param>
+                    <param id="1" name="Y">382</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="790446101728078" type="Sprite2">
+                    <param id="0" name="Degrees">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="504280402261658">
+                    <conditions>
+                        <condition id="4" name="Is any playing" sid="335565507107086" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="430493412011021" type="Sprite2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="734368875158733" type="Sprite2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

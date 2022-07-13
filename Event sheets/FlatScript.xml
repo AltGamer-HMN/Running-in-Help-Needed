@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FlatScript</name>
+    <events>
+        <variable constant="0" name="enter" sid="662399819048286" static="0" type="number">0</variable>
+        <event-block sid="982976172482024">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="697715003500497" type="System" />
+                <condition id="-14" name="Compare variable" sid="399533578737143" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="175036715897287" type="Sprite2">
+                    <param id="0" name="X">513</param>
+                    <param id="1" name="Y">391</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514957117214115">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="373507921575981" type="System" />
+                <condition id="-14" name="Compare variable" sid="602600606013940" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="594443605401105" type="Sprite2">
+                    <param id="0" name="X">238</param>
+                    <param id="1" name="Y">148</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298783226545906">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="126861628211832" type="System" />
+                <condition id="-14" name="Compare variable" sid="527901118183909" type="System">
+                    <param id="0" name="Variable">enter</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="390368552061656" type="Sprite2">
+                    <param id="0" name="X">583</param>
+                    <param id="1" name="Y">155</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="752429758788600">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="436270902076913" type="Sprite2">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="222148464922700" type="System">
+                    <param id="0" name="Layout">WC</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="569195370246137">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="898169978891985" type="Sprite2">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="420795368035069" type="System">
+                    <param id="0" name="Layout">Bathroom</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="392122472669415">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="140238726495267" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="379915512562272" type="System">
+                    <param id="0" name="Layout">Something</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
