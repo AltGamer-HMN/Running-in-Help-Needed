@@ -82,7 +82,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="1" name="Close" sid="756317088580348" type="Browser" />
+                <action id="-2" name="Go to layout" sid="756317088580348" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="456294597804494">

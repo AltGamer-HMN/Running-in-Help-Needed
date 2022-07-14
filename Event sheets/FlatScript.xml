@@ -102,16 +102,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="392122472669415">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="140238726495267" type="Keyboard">
-                    <param id="0" name="Key">27</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="379915512562272" type="Browser" />
-            </actions>
-        </event-block>
         <event-block sid="876491688313048">
             <conditions>
                 <condition id="0" name="On key pressed" sid="689547012108122" type="Keyboard">
@@ -187,6 +177,52 @@
                 <action id="-3" name="Set position" sid="468096782363445" type="Sprite2">
                     <param id="0" name="X">79</param>
                     <param id="1" name="Y">329</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="766697476660868">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="513484464017980" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="646180065298393" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="772790038161548">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="381688345781361" type="System">
+                    <param id="0" name="Variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Cancel fullscreen" sid="834625196952500" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="990423642425103">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="420291548323271" type="System" />
+                <condition id="12" inverted="1" name="Supports multiplayer" sid="353722324761813" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="0" name="Alert" sid="523475409337031" type="Browser">
+                    <param id="0" name="Message">&quot;Looks like you don&apos;t have internet connected. Please connect it for more features&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586902896606266">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="303032472195550" type="System" />
+                <condition id="12" name="Supports multiplayer" sid="601137446743690" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="318367663774166" type="System">
+                    <param id="0" name="Layout">Login</param>
                 </action>
             </actions>
         </event-block>

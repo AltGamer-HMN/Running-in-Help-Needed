@@ -17,16 +17,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="505513983942822">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="759038632077178" type="Keyboard">
-                    <param id="0" name="Key">27</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="146593111594884" type="Browser" />
-            </actions>
-        </event-block>
         <event-block sid="329790137279296">
             <conditions>
                 <condition id="0" name="On key pressed" sid="779794927295322" type="Keyboard">
@@ -44,6 +34,18 @@
             <actions>
                 <action id="16" name="Set title" sid="107324106433426" type="NWjs">
                     <param id="0" name="Title">&quot;Beta&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="775766389854038">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="514494765600477" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="573053250166557" type="System">
+                    <param id="0" name="Layout">Menu</param>
                 </action>
             </actions>
         </event-block>

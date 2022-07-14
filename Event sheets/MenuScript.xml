@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuScript</name>
+    <events>
+        <variable constant="0" name="Variable1" sid="821203601243102" static="0" type="number">0</variable>
+        <event-block sid="998370362145487">
+            <conditions>
+                <condition id="0" name="On clicked" sid="979283339948097" type="Button" />
+                <condition id="10" name="Is fullscreen" sid="754559995120833" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="0" name="Alert" sid="495429448274394" type="Browser">
+                    <param id="0" name="Message">&quot;Before you will exit game, make sure you disabled fullscreen!(by my testing i noticed game doesn&apos;t exits itself if it is fullscreen)&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="606481899129978">
+            <conditions>
+                <condition id="0" name="On clicked" sid="552290181788209" type="Button2" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="995716261648323" type="System">
+                    <param id="0" name="Layout">Flat</param>
+                </action>
+                <action id="33" name="Stop all" sid="738012370987860" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="376156141906603">
+            <conditions>
+                <condition id="0" name="On clicked" sid="934053333232916" type="Button3" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="875890005411235" type="System">
+                    <param id="0" name="Variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="371175399348847" type="System">
+                    <param id="0" name="Layout">Flat</param>
+                </action>
+                <action id="11" name="Cancel fullscreen" sid="623993168111099" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="410325677309013">
+            <conditions>
+                <condition id="0" name="On clicked" sid="999042971239343" type="Button" />
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="335684327566462" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

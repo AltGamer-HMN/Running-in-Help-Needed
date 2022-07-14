@@ -283,16 +283,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="412182414712429">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="315435038864272" type="Keyboard">
-                    <param id="0" name="Key">27</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="722439310515751" type="Browser" />
-            </actions>
-        </event-block>
         <event-block sid="265956044904148">
             <conditions>
                 <condition id="0" name="On key pressed" sid="352353826913041" type="Keyboard">
@@ -301,6 +291,18 @@
             </conditions>
             <actions>
                 <action id="26" name="Show dev tools" sid="904684081044906" type="NWjs" />
+            </actions>
+        </event-block>
+        <event-block sid="785093012039413">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="858398850067671" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="258433040048615" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
             </actions>
         </event-block>
     </events>

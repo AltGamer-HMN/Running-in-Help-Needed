@@ -12,11 +12,17 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="YellowAfterlife" id="GameJolt" version="1.100000024">GameJolt</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -423,31 +429,71 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Multiplayer" sid="419016936930113">
+            <plugin id="Multiplayer" />
+        </object-type>
+        <object-type name="ProgressBar" sid="282338294306581">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="Button" sid="274810701261826">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button2" sid="661877178063258">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button3" sid="584878981294309">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="GameJolt" sid="359674755615499">
+            <plugin id="GameJolt" />
+        </object-type>
+        <object-type name="Sprite28" sid="185582270457076">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376073887728850" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="420126985939020">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextBox" sid="811799410501973">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Button4" sid="118991146437678">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="List" sid="364374219994745">
+            <plugin id="List" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Flat.xml</layout>
         <layout>WC.xml</layout>
         <layout>Bathroom.xml</layout>
-        <layout>Something.xml</layout>
         <layout>RealLife2.xml</layout>
         <layout>RealLife.xml</layout>
         <layout>BedRoom.xml</layout>
         <layout>UrpoBaR.xml</layout>
         <layout>Visit.xml</layout>
         <layout>Kitchen.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>Login.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>FlatScript.xml</event-sheet>
         <event-sheet>WCScript.xml</event-sheet>
         <event-sheet>BathScript.xml</event-sheet>
-        <event-sheet>Something.xml</event-sheet>
         <event-sheet>TubScript.xml</event-sheet>
         <event-sheet>RealLifeScript.xml</event-sheet>
         <event-sheet>Bedroom.xml</event-sheet>
         <event-sheet>UrpoBaR.xml</event-sheet>
         <event-sheet>TheBiggestRoom-sScript.xml</event-sheet>
         <event-sheet>KitchenScript.xml</event-sheet>
+        <event-sheet>MenuScript.xml</event-sheet>
+        <event-sheet>LoginScript.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Browser" uid="10" />
@@ -468,6 +514,14 @@
         </global-instance>
         <global-instance type="Mouse" uid="43" />
         <global-instance type="NWjs" uid="48" />
+        <global-instance type="Multiplayer" uid="92" />
+        <global-instance type="GameJolt" uid="29">
+            <properties>
+                <game-id>22058</game-id>
+                <private-key>07ef5a14de8435ec8bb7586f3cfd139a</private-key>
+                <log-requests>False</log-requests>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder>
         <file name="Sound_06441.ogg" />

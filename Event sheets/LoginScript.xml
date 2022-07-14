@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LoginScript</name>
+    <events>
+        <variable constant="1" name="GameID" sid="127263414816039" static="0" type="text">PL4CE91-RIHN</variable>
+        <event-block sid="642849266598185">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="710527858298301" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button4</param>
+                </condition>
+                <condition id="0" inverted="1" name="Compare text" sid="636573115443787" type="TextBox">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Log in" sid="423334129290089" type="Multiplayer">
+                    <param id="0" name="Alias">TextBox.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="548821221295115">
+            <conditions>
+                <condition id="4" name="On logged in" sid="266231578350299" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="530552009654242" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="20" name="Request room list" sid="704340028722254" type="Multiplayer">
+                    <param id="0" name="Game">GAMEID</param>
+                    <param id="1" name="Instance">&quot;default&quot;</param>
+                    <param id="2" name="Which">2</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="616957878593581" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287156278924258">
+            <conditions>
+                <condition id="21" name="On room list" sid="930844812953341" type="Multiplayer" />
+                <condition id="-12" name="Repeat" sid="214923713504969" type="System">
+                    <param id="0" name="Count">Multiplayer.ListRoomCount</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

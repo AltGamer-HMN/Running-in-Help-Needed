@@ -17,5 +17,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="349108819223256">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="746420346684087" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="104528228839676" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

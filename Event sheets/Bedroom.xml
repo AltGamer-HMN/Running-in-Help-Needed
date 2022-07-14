@@ -26,16 +26,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="755402522855301">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="446540956073407" type="Keyboard">
-                    <param id="0" name="Key">27</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="455089358292273" type="Browser" />
-            </actions>
-        </event-block>
         <event-block sid="616567122395777">
             <conditions>
                 <condition id="0" name="On key pressed" sid="713206075926330" type="Keyboard">
@@ -71,6 +61,18 @@
                     <param id="5" name="Outer angle">360</param>
                     <param id="6" name="Outer gain">0</param>
                     <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="690922070147642">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="223769884779073" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="198994420368765" type="System">
+                    <param id="0" name="Layout">Menu</param>
                 </action>
             </actions>
         </event-block>
